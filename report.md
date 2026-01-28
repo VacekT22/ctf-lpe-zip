@@ -1,3 +1,3 @@
-Uživatel student měl povoleno bez hesla spouštět program zip jako uživatel spravce.
-Program zip umožňuje číst soubory dostupné cílovému uživateli, což vedlo k přečtení souboru s vlajkou.
-Nápravou je odebrání NOPASSWD sudo práv nebo striktní omezení povolených příkazů dle principu minimálních privilegií.
+Útok fungoval, protože uživatel student mohl spouštět program zip jako uživatel spravce bez hesla.
+Parametr -TT umožňuje spuštění libovolného příkazu, což vedlo k eskalaci privilegií.
+Administrátor by měl omezit sudo práva, zakázat nebezpečné parametry nebo nepovolovat zip v sudo.
